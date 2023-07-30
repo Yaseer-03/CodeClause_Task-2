@@ -144,12 +144,14 @@ public final class PasswordGenerator {
         }
         return new String(password);
     }
-
+public void main(String args[]){
 
 PasswordGenerator passwordGenerator = new PasswordGenerator.PasswordGeneratorBuilder()
         .useDigits(true)
         .useLower(true)
         .useUpper(true)
         .build();
-String password = passwordGenerator.generate(8); // output ex.: lrU12fmM 75iwI90o
+String password = passwordGenerator.generate(8); // output ex.: lrU12fmM 
+    System.out.println("Password is: " + password); 
+}
 }
